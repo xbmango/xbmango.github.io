@@ -1,0 +1,17 @@
+{
+  "id": "Xbmmw.app.sub",
+  "name": "Xbmmw 羊毛订阅",
+  "author": "@Xbmmw",
+  "icon": "https://xb123.ga/xbmmw.png",
+  "repo": "https://github.com/xbmango/xbmango.github.io",
+  "apps": [
+    {
+      "id": "weibo",
+      "name": "腾讯新闻",
+      "keys": ["sy_signurl_txnews2", "sy_cookie_txnews2"],
+      "author": "@nothing",
+      "repo": "https://github.com/xbmango/xbmango.github.io/blob/master/txnews2.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/txnews.png", "https://raw.githubusercontent.com/Orz-3/task/master/txnews.png"]
+    }
+  ]
+}
