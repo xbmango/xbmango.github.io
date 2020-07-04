@@ -8,7 +8,7 @@
     {
       "id": "txnews",
       "name": "腾讯新闻",
-      "keys": ["sy_signurl_txnews2", "sy_cookie_txnews2"],
+      "keys": ["sy_signurl_txnews2", "sy_cookie_txnews2", "video_txnews2"],
       "author": "@nothing",
       "repo": "https://github.com/xbmango/xbmango.github.io/blob/master/txnews2.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/txnews.png", "https://raw.githubusercontent.com/Orz-3/task/master/txnews.png"]
