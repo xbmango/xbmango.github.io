@@ -1,0 +1,507 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+}
+
+.margin_88 {
+    height: 88px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    width: calc(100% - 30px);
+    height: 88px;
+    line-height: 88px;
+    background: rgba(250, 250, 250, 0.93);
+    z-index: 99;
+    backdrop-filter: saturate(180%) blur(6px);
+    border-bottom: 2px solid #eee;
+}
+
+
+.navbar_r {
+    float: right;
+}
+
+.navbar h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: calc(100% - 400px);
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navbar_icobtn {
+    position: relative;
+    width: 70px;
+    height: 88px;
+}
+
+.navbar_icobtn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar_tab {
+    -webkit-display: flex;
+    display: flex;
+    -webkit-display: box-flex;
+    display: box-flex;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.navbar_tab a.std {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+}
+
+.navbar_tab a {
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    line-height: 68px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 32px;
+}
+
+.iconbar {
+    padding: 22px 0 10px;
+    background: #f7f7f7;
+    overflow: hidden;
+    display: none;
+    border-radius: 40px;
+    margin: 12px 10px;
+}
+
+.iconbar a {
+    display: block;
+    float: left;
+    padding: 20px 0;
+    width: 25%;
+    text-align: center;
+    color: #666;
+    font-size: 26px;
+}
+
+.iconbar a img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 100px;
+}
+
+.applist_wrap{
+    margin: 10px 0 100px 0;
+}
+
+.applist {
+    position: relative;
+    margin-bottom: 1px;
+    background: #fff;
+}
+
+.applist_main {
+    display: block;
+    width: 100%;
+    height: 176px;
+}
+
+.applist_main.style{
+    margin-top: 100px;
+}
+
+.applist_main_icon {
+    position: relative;
+    float: left;
+    margin: 28px 0 0 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 27px;
+    background: #f8f8f8;
+}
+
+.applist_main_icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 27px;
+}
+
+.applist_main_icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 118px;
+    height: 118px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 27px;
+}
+
+.applist_main_text {
+    display: block;
+    float: left;
+    margin: 20px 0 0 20px;
+    width: calc(100% - 380px);
+}
+
+.applist_main_text_red {
+    display: block;
+    float: left;
+    margin: 20px 0 0 20px;
+    width: calc(100% - 380px);
+}
+
+.applist_main_text_red dt {
+    margin-top: 2px;
+    font-size: 28px;
+    color: #333;
+    overflow: hidden;
+}
+
+.applist_main_text dt {
+    margin-top: 2px;
+    font-size: 28px;
+    color: #333;
+    overflow: hidden;
+}
+
+.applist_main_text_red dd {
+    font-size: 22px;
+    line-height: 38px;
+    color: red;
+    overflow: hidden;
+}
+
+.applist_main_text dd {
+    font-size: 22px;
+    line-height: 38px;
+    color: #aaa;
+    overflow: hidden;
+    margin: 0;
+}
+
+.applist_main_text dd span {
+    margin: 0 10px;
+    color: #eee;
+}
+
+.applist_main_text dd p {
+    color: #777;
+}
+
+.textover {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.app_install {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 230px;
+    height: 56px;
+}
+
+.app_install_2 {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 230px;
+    height: 56px;
+}
+
+.app_install_3 {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 230px;
+    height: 56px;
+}
+
+.app_install_button {
+    float: right;
+    padding: 0 5px;
+    min-width: 102px;
+    height: 52px;
+    border: 2.5px solid #236ee7;
+    background-color: #236ee7;
+    color: #fff;
+    line-height: 52px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.tabbar_main {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 102px;
+    background: #fafafa;
+    z-index: 110;
+    border-top: 2px solid #eee;
+    transition: all 0.1s linear;
+    padding-bottom: 25px;
+}
+
+.tabbar_main a {
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.tabbar_main_home {
+    background: url(../img/home.png)/*tpa=https://ios.gxzyzd.com/img/home.png*/ center 14px no-repeat;
+}
+
+.tabbar_main_home.std {
+    background: url(../img/home_std.png)/*tpa=https://ios.gxzyzd.com/img/home_std.png*/ center 14px no-repeat;
+}
+
+.tabbar_main_old {
+    background: url(../img/old.png)/*tpa=https://ios.gxzyzd.com/img/old.png*/ center 14px no-repeat;
+}
+
+.tabbar_main_old.std  {
+    background: url(../img/money_std.png)/*tpa=https://ios.gxzyzd.com/img/money_std.png*/ center 14px no-repeat;
+}
+
+.tabbar_main_other {
+    background: url(../img/other.png)/*tpa=https://ios.gxzyzd.com/img/other.png*/ center 14px no-repeat
+}
+
+.tabbar_main_other.std {
+    background: url(../img/other_std.png)/*tpa=https://ios.gxzyzd.com/img/other_std.png*/ center 14px no-repeat
+}
+
+.tabbar_main_home {
+    background: url(../img/home.png)/*tpa=https://ios.gxzyzd.com/img/home.png*/ center 14px no-repeat
+}
+
+.tabbar_main_me {
+    background: url(../img/gzh.png)/*tpa=https://ios.gxzyzd.com/img/gzh.png*/ center 14px no-repeat
+}
+
+.tabbar_main .std p {
+    color: #1395d9;
+}
+
+.tabbar_main a p {
+    margin-top: 64px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    line-height: 108px;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 129px;
+    clear: both;
+    color: #777;
+}
+
+.swiper-container {
+    width: 96vw;
+    height: 36vw;
+    border-radius: 18px;
+    margin: 100px 10px 13px 10px;
+    padding: 0 10px;
+}
+
+.swiper-container img{
+    width: 100%;
+}
+
+.news{
+    text-align: center;
+    background: #f7f7f7;
+    margin: 12px 10px;
+    border-radius: 30px 30px 0 0;
+}
+.news img{
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.news h2{
+    font-size: 30px;
+    margin: 10px 3px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #191919;
+    }
+    .navbar{
+        background: #000000;
+    }
+    .navbar_tab a.std {
+        background: rgba(255, 255, 255, 0.12);
+    }
+    .iconbar {
+        background: #191919;
+    }
+    .iconbar a {
+        color: #666;
+    }
+    .applist{
+        background-color: #2f2f2f;
+    }
+    .applist_main_icon img{
+        filter: brightness(83%);
+    }
+    .iconbar a img {
+        filter: brightness(83%);
+    }
+    .applist_main_text dt {
+        color: #fff;
+    }
+    .applist_main_text_red dt {
+        color: #fff;
+    }
+    .tabbar_main {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 102px;
+        background: #000000;
+        z-index: 110;
+        border-top: 2px solid #000000;
+        transition: all 0.1s linear;
+    }
+    
+}
+
+
